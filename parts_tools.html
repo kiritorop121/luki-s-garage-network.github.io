@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parts & Tools - Compatibility Checker & Specialist Directory | Luki's Garage Network</title>
+    <meta name="description" content="Use the Parts Compatibility Checker to prevent costly build errors. Find a trusted local performance shop in the Specialist Directory.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">LUKI'S <span>GARAGE</span> NETWORK</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="my_garage.html">My Garage</a></li>
+                    <li><a href="technical_library.html">Library</a></li>
+                    <li><a href="parts_tools.html" class="active">Parts & Tools</a></li>
+                    <li><a href="community.html">Community</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 id="tools-heading">Parts & Tools Utility Hub</h1>
+        <p style="color: var(--color-text-faded); margin-bottom: 2rem;">Prevent costly errors. Find what fits and who can install it.</p>
+        
+        <!-- Compatibility Checker Section -->
+        <section class="card" style="border-left: 4px solid var(--color-text-light);">
+            <h2 style="color: var(--color-secondary-accent);">Parts Compatibility Checker</h2>
+            <p style="margin-bottom: 1.5rem;">Instantly check if a specific aftermarket part SKU is compatible with your logged Digital Build Sheet, flagging potential conflicts before you buy.</p>
+            <form style="display: flex; gap: 1rem; flex-direction: column;">
+                <div class="form-group" style="margin-bottom: 0;">
+                    <label for="part-sku">Aftermarket Part SKU / Number:</label>
+                    <input type="text" id="part-sku" name="part-sku" placeholder="E.g., CUS-6A1-N92">
+                </div>
+                <div class="form-group" style="margin-bottom: 0;">
+                    <label for="target-vehicle">Check against Vehicle:</label>
+                    <select id="target-vehicle" name="target-vehicle">
+                        <option value="wrx-sti">2018 Subaru WRX STI (Track Build)</option>
+                        <option value="m3">2005 BMW E46 M3</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn">Run Compatibility Check</button>
+            </form>
+            <div id="check-result" style="margin-top: 1rem; padding: 1rem; border: 1px solid #444; background-color: #333; color: var(--color-tertiary-structure);">
+                <p>Result will appear here: **CHECK PENDING**</p>
+            </div>
+        </section>
+
+        <!-- Specialist Directory Section -->
+        <section style="margin-top: 3rem;">
+            <h2 id="directory-heading">Trusted Specialist Directory</h2>
+            <p style="color: var(--color-text-faded); margin-bottom: 1.5rem;">A geographically searchable database of highly rated performance shops, specialized tuners, and dyno facilities.</p>
+            <div class="grid-layout">
+                <div class="card">
+                    <h3 style="color: var(--color-text-light);">Tuning Specialist</h3>
+                    <p>Company: Apex Dyno Works</p>
+                    <p>Expertise: JDM ECU Flashing, Engine Builds</p>
+                    <p>Location: Chicago, IL</p>
+                </div>
+                <div class="card">
+                    <h3 style="color: var(--color-text-light);">Chassis & Suspension</h3>
+                    <p>Company: Street Logic Customs</p>
+                    <p>Expertise: Custom Cage Welding, Alignment</p>
+                    <p>Location: Dallas, TX</p>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>If you have any questions or comments please contact the <a href="mailto:webmaster@lukisgarage.net">webmaster</a>.</p>
+            <p>&copy; 2024 Luki's Garage Network. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="project_docs.html">Project Documentation</a>
+            </div>
+            <p style="font-size: 0.75rem; color: #555555; margin-top: 1rem;">
+                Notice: This is not a real company, this web site was developed for a class project.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
