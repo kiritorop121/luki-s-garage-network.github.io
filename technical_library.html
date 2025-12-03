@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Library - Verified Schematics & Guides | Luki's Garage Network</title>
+    <meta name="description" content="Access the centralized, highly searchable repository for all verified technical documentation, factory manuals, and peer-reviewed installation guides.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">LUKI'S <span>GARAGE</span> NETWORK</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="my_garage.html">My Garage</a></li>
+                    <li><a href="technical_library.html" class="active">Library</a></li>
+                    <li><a href="parts_tools.html">Parts & Tools</a></li>
+                    <li><a href="community.html">Community</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 id="library-heading">Verified Technical Library</h1>
+        <p style="color: var(--color-text-faded); margin-bottom: 2rem;">Search by component, model, or factory part number. All documents are community-verified for accuracy.</p>
+        
+        <!-- Search and Filter Form -->
+        <form style="display: flex; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap;">
+            <input type="text" id="search-input" placeholder="Search by Part # or Diagram Name (e.g., 'N54 Injector Wiring')" style="flex-grow: 1; padding: 0.75rem; background-color: #000; border: 1px solid #444; color: var(--color-text-light); border-radius: 4px;">
+            <select id="vehicle-filter" style="padding: 0.75rem; background-color: #000; border: 1px solid #444; color: var(--color-text-light); border-radius: 4px;">
+                <option value="all">Filter by Vehicle...</option>
+                <option value="wrx-sti">Subaru WRX STI</option>
+                <option value="m3">BMW E46 M3</option>
+            </select>
+            <button type="submit" class="btn">Search</button>
+        </form>
+
+        <section>
+            <h2>Featured Document Types</h2>
+            <div class="grid-layout">
+                <div class="card">
+                    <h3 style="color: var(--color-text-light);">Schematics & Diagrams</h3>
+                    <p>Factory service manuals, exploded parts views, and complex wiring diagrams (Verified).</p>
+                    <a href="#" style="margin-top: 1rem; display: block;">View Schematics &raquo;</a>
+                </div>
+                <div class="card">
+                    <h3 style="color: var(--color-text-light);">Installation Guides</h3>
+                    <p>Peer-reviewed 'How-To' guides for popular modifications, complete with required tool lists.</p>
+                    <a href="#" style="margin-top: 1rem; display: block;">Browse Guides &raquo;</a>
+                </div>
+                <div class="card">
+                    <h3 style="color: var(--color-text-light);">Tuning & Diagnostics</h3>
+                    <p>Community-provided ECU maps, logging parameters, and diagnostic troubleshooting trees.</p>
+                    <a href="#" style="margin-top: 1rem; display: block;">Explore Data &raquo;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Example of Data Display (using tables for data) -->
+        <section style="margin-top: 3rem;">
+            <h2>Recent Community-Verified Documents</h2>
+            <div class="card" style="padding: 0;">
+                <table style="width: 100%; border-collapse: collapse;">
+                    <thead>
+                        <tr style="background-color: #333;">
+                            <th style="padding: 0.75rem; text-align: left; border-bottom: 1px solid #444;">Title</th>
+                            <th style="padding: 0.75rem; text-align: left; border-bottom: 1px solid #444;">Model</th>
+                            <th style="padding: 0.75rem; text-align: left; border-bottom: 1px solid #444;">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="background-color: #202020;">
+                            <td style="padding: 0.75rem; border-bottom: 1px solid #444;"><a href="#">EJ25 Timing Belt Replacement</a></td>
+                            <td style="padding: 0.75rem; border-bottom: 1px solid #444;">Subaru</td>
+                            <td style="padding: 0.75rem; border-bottom: 1px solid #444;"><span style="color: green;">Verified</span></td>
+                        </tr>
+                        <tr style="background-color: #121212;">
+                            <td style="padding: 0.75rem; border-bottom: 1px solid #444;"><a href="#">E46 Suspension Bushing Torque Specs</a></td>
+                            <td style="padding: 0.75rem; border-bottom: 1px solid #444;">BMW</td>
+                            <td style="padding: 0.75rem; border-bottom: 1px solid #444;"><span style="color: var(--color-secondary-accent);">Pending Review</span></td>
+                        </tr>
+                        <tr style="background-color: #202020;">
+                            <td style="padding: 0.75rem;"><a href="#">351W Head Gasket Procedure</a></td>
+                            <td style="padding: 0.75rem;">Ford</td>
+                            <td style="padding: 0.75rem;"><span style="color: green;">Verified</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>If you have any questions or comments please contact the <a href="mailto:webmaster@lukisgarage.net">webmaster</a>.</p>
+            <p>&copy; 2024 Luki's Garage Network. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="project_docs.html">Project Documentation</a>
+            </div>
+            <p style="font-size: 0.75rem; color: #555555; margin-top: 1rem;">
+                Notice: This is not a real company, this web site was developed for a class project.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
